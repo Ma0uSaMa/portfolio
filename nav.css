@@ -43,6 +43,7 @@ nav {
     padding: 8px 12px;
     background-color: var(--primary-color-light);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color var(--tran-02);
 }
 
 .name {
@@ -55,7 +56,7 @@ nav {
 
 .nav-links {
     display: flex;
-    width: 50%; /* Adjusted width for better responsiveness */
+    width: 50%;
     justify-content: space-between;
 }
 
