@@ -23,7 +23,6 @@
     --tran-05: all 0.5s ease;
 }
 
-/* Common styles for header and sections */
 body {
     background-color: var(--body-color);
 }
@@ -431,82 +430,4 @@ footer {
     width: 100%;
     bottom: 0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: var(--primary-color-light);
-        display: none;
-        z-index: 1000;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-    }
-
-    .nav-toggle {
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-        z-index: 1001;
-    }
-
-    .container-btn {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn {
-        margin-right: 0;
-    }
-
-    .col {
-        justify-content: center;
-    }
-
-    .skills-box {
-        width: 100%;
-    }
-
-    .project {
-        padding: 20px;
-    }
-
-    .projects-header h2 {
-        font-size: 2em;
-    }
-
-    .contact-info {
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .project {
-        padding: 15px;
-    }
-
-    .projects-header h2 {
-        font-size: 1.8em;
-    }
-
-    .nav-toggle {
-        top: 10px;
-        right: 10px;
-    }
 }
