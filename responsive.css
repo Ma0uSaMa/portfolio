@@ -3,10 +3,10 @@
         flex-direction: column;
         align-items: center;
         position: fixed;
-        top: 0;
+        top: 9vh;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         background-color: var(--primary-color-light);
         display: none;
         z-index: 1000;
@@ -27,6 +27,12 @@
         right: 20px;
         cursor: pointer;
         z-index: 1001;
+    }
+
+    .container-name {
+        font-size: 40px;
+        font-weight: 500; /* Adjust the font weight as needed */
+        margin-block: 15px; /* Adjust margin as needed */
     }
 
     .container-btn {
@@ -61,6 +67,13 @@
 }
 
 @media screen and (max-width: 600px) {
+
+        .container-name {
+        font-size: 30px;
+        font-weight: 400;
+        margin-block: 10px;
+    }
+
     .project {
         padding: 15px;
     }
