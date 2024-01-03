@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Add smooth scroll to anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -10,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Your existing scroll event listener
     window.addEventListener("scroll", function () {
         var header = document.getElementById("main-header");
         if (window.scrollY > 50) {
@@ -20,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Typed.js initialization
     var typed = new Typed('.typedText', {
         strings: ['Developer'],
         typeSpeed: 50,
@@ -30,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
     });
 
-    // Functions for previewing and downloading CV
     function previewCV() {
         window.open('sarojrai.pdf', '_blank');
     }
