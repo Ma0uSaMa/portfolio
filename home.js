@@ -45,9 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     var navLinks = document.querySelector('.nav-links');
-    var navToggle = document.querySelector('.nav-toggle');
+    var navToggle = document.querySelector('.toggle');
 
     navToggle.addEventListener('click', function () {
         navLinks.classList.toggle('show');
+        navToggle.classList.toggle('active');
     });
 });
