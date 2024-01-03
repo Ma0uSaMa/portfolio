@@ -42,3 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
         downloadLink.click();
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var navLinks = document.querySelector('.nav-links');
+    var navToggle = document.querySelector('.nav-toggle');
+
+    navToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('show');
+    });
+});

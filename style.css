@@ -76,6 +76,10 @@ nav {
     color: var(--primary-color);
 }
 
+.nav-toggle {
+    display: none;
+}
+
 #main-header {
     position: fixed;
     top: 0;
@@ -391,8 +395,33 @@ footer {
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        justify-content: center;
+        height: 100vh;
+        background-color: var(--primary-color-light);
+        display: none;
+        z-index: 1000;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1001; 
     }
 
     .container-btn {
